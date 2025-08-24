@@ -332,11 +332,21 @@ const getText = (key: string) => t(key, currentLanguage.value)
             <div class="space-y-6">
               <div class="contact-item">
                 <span class="contact-icon">📧</span>
-                <span class="text-lg">{{ getText('contact.email') }}</span>
+                <a 
+                  href="mailto:juanreyguerrero51@gmail.com" 
+                  class="text-lg hover:text-indigo-300 transition-colors duration-300"
+                >
+                  {{ getText('contact.email') }}
+                </a>
               </div>
               <div class="contact-item">
                 <span class="contact-icon">📱</span>
-                <span class="text-lg">{{ getText('contact.phone') }}</span>
+                <a 
+                  href="tel:809-778-8792" 
+                  class="text-lg hover:text-indigo-300 transition-colors duration-300"
+                >
+                  {{ getText('contact.phone') }}
+                </a>
               </div>
               <div class="contact-item">
                 <span class="contact-icon">📍</span>

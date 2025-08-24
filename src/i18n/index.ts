@@ -98,9 +98,9 @@ export const translations: Record<string, Translations> = {
     
     // Contact Section
     'contact.title': 'Contacto',
-    'contact.email': 'juan@ejemplo.com',
-    'contact.phone': '+57 300 123 4567',
-    'contact.location': 'Bogotá, Colombia',
+    'contact.email': 'juanreyguerrero51@gmail.com',
+    'contact.phone': '809-778-8792',
+    'contact.location': 'Santo Domingo, República Dominicana',
     
     // Footer
     'footer.copyright': 'Todos los derechos reservados.'
@@ -152,9 +152,9 @@ export const translations: Record<string, Translations> = {
     
     // Contact Section
     'contact.title': 'Contact',
-    'contact.email': 'juan@ejemplo.com',
-    'contact.phone': '+57 300 123 4567',
-    'contact.location': 'Bogotá, Colombia',
+    'contact.email': 'juanreyguerrero51@gmail.com',
+    'contact.phone': '809-778-8792',
+    'contact.location': 'Santo Domingo, Dominican Republic',
     
     // Footer
     'footer.copyright': 'All rights reserved.'
@@ -206,9 +206,9 @@ export const translations: Record<string, Translations> = {
     
     // Contact Section
     'contact.title': 'Contato',
-    'contact.email': 'juan@ejemplo.com',
-    'contact.phone': '+57 300 123 4567',
-    'contact.location': 'Bogotá, Colombia',
+    'contact.email': 'juanreyguerrero51@gmail.com',
+    'contact.phone': '809-778-8792',
+    'contact.location': 'Santo Domingo, República Dominicana',
     
     // Footer
     'footer.copyright': 'Todos os direitos reservados.'
@@ -258,9 +258,9 @@ export const translations: Record<string, Translations> = {
     
     // Contact Section
     'contact.title': 'Contact',
-    'contact.email': 'juan@ejemplo.com',
-    'contact.phone': '+57 300 123 4567',
-    'contact.location': 'Bogotá, Colombie',
+    'contact.email': 'juanreyguerrero51@gmail.com',
+    'contact.phone': '809-778-8792',
+    'contact.location': 'Santo Domingo, République Dominicaine',
     
     // Footer
     'footer.copyright': 'Tous droits réservés.'
@@ -310,9 +310,9 @@ export const translations: Record<string, Translations> = {
     
     // Contact Section
     'contact.title': 'Kontakt',
-    'contact.email': 'juan@ejemplo.com',
-    'contact.phone': '+57 300 123 4567',
-    'contact.location': 'Bogotá, Kolumbien',
+    'contact.email': 'juanreyguerrero51@gmail.com',
+    'contact.phone': '809-778-8792',
+    'contact.location': 'Santo Domingo, Dominikanische Republik',
     
     // Footer
     'footer.copyright': 'Alle Rechte vorbehalten.'
@@ -362,9 +362,9 @@ export const translations: Record<string, Translations> = {
     
     // Contact Section
     'contact.title': 'Contatto',
-    'contact.email': 'juan@ejemplo.com',
-    'contact.phone': '+57 300 123 4567',
-    'contact.location': 'Bogotá, Colombia',
+    'contact.email': 'juanreyguerrero51@gmail.com',
+    'contact.phone': '809-778-8792',
+    'contact.location': 'Santo Domingo, Repubblica Dominicana',
     
     // Footer
     'footer.copyright': 'Tutti i diritti riservati.'
