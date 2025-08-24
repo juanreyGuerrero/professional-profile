@@ -35,7 +35,7 @@ Un perfil profesional moderno, minimalista y multilingüe construido con Vue.js,
 ### 🎵 Portafolio
 - **MusicFlow**: Aplicación Flutter de música
 - **CGT DO SRL**: Empresa de paneles solares, cámaras de seguridad y desarrollo web
-- **Dashboard Analítico**: Panel Vue.js + D3.js
+- **deeXy Virtual Assistant**: Asistente virtual con IA generativa (Flutter + ChatGPT API)
 
 ### 🎯 Habilidades
 - Frontend (Vue.js, React, TypeScript)
