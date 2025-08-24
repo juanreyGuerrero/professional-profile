@@ -2,6 +2,7 @@
 import { ref, onMounted, computed } from 'vue'
 import LanguageSelector from './components/LanguageSelector.vue'
 import MusicFlowImage from './components/MusicFlowImage.vue'
+import CGTImage from './components/CGTImage.vue'
 import { t, detectLanguage } from './i18n'
 
 const currentSection = ref('about')
@@ -216,8 +217,8 @@ const getText = (key: string) => t(key, currentLanguage.value)
           <!-- Project 2 -->
           <div class="animate-on-scroll">
             <div class="card overflow-hidden">
-              <div class="h-48 bg-gradient-to-br from-green-500 to-blue-600 flex items-center justify-center">
-                <span class="text-6xl">⚡</span>
+              <div class="h-48 flex items-center justify-center">
+                <CGTImage />
               </div>
               <div class="p-6">
                 <h3 class="text-xl font-bold text-gray-900 mb-2">{{ getText('portfolio.project2.title') }}</h3>
