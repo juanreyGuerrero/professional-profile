@@ -34,7 +34,7 @@ Un perfil profesional moderno, minimalista y multilingüe construido con Vue.js,
 
 ### 🎵 Portafolio
 - **MusicFlow**: Aplicación Flutter de música
-- **App de Gestión Empresarial**: Solución React + Python
+- **CGT DO SRL**: Empresa de paneles solares, cámaras de seguridad y desarrollo web
 - **Dashboard Analítico**: Panel Vue.js + D3.js
 
 ### 🎯 Habilidades

@@ -217,7 +217,7 @@ const getText = (key: string) => t(key, currentLanguage.value)
           <div class="animate-on-scroll">
             <div class="card overflow-hidden">
               <div class="h-48 bg-gradient-to-br from-green-500 to-blue-600 flex items-center justify-center">
-                <span class="text-6xl">🏢</span>
+                <span class="text-6xl">⚡</span>
               </div>
               <div class="p-6">
                 <h3 class="text-xl font-bold text-gray-900 mb-2">{{ getText('portfolio.project2.title') }}</h3>
