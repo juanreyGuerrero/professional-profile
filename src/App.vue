@@ -225,7 +225,14 @@ const getText = (key: string) => t(key, currentLanguage.value)
                 <p class="text-sm text-green-600 font-medium mb-3">{{ getText('portfolio.project2.tech') }}</p>
                 <p class="text-gray-600 mb-4">{{ getText('portfolio.project2.description') }}</p>
                 <div class="flex gap-3">
-                  <button class="btn-primary text-sm py-2 px-4">{{ getText('portfolio.viewProject') }}</button>
+                  <a 
+                    href="https://www.cgt.do/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="btn-primary text-sm py-2 px-4 inline-flex items-center justify-center"
+                  >
+                    {{ getText('portfolio.viewProject') }}
+                  </a>
                   <button class="btn-secondary text-sm py-2 px-4">{{ getText('portfolio.viewCode') }}</button>
                 </div>
               </div>
