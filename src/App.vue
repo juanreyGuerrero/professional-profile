@@ -31,6 +31,21 @@ onMounted(() => {
   document.querySelectorAll('.animate-on-scroll').forEach(el => {
     observer.observe(el)
   })
+  
+  // Efecto de foco con cursor
+  const handleMouseMove = (e: MouseEvent) => {
+    const x = e.clientX
+    const y = e.clientY
+    document.documentElement.style.setProperty('--mouse-x', `${x}px`)
+    document.documentElement.style.setProperty('--mouse-y', `${y}px`)
+  }
+  
+  document.addEventListener('mousemove', handleMouseMove)
+  
+  // Cleanup
+  return () => {
+    document.removeEventListener('mousemove', handleMouseMove)
+  }
 })
 
 const scrollToSection = (section: string) => {
@@ -51,13 +66,13 @@ const getText = (key: string) => t(key, currentLanguage.value)
 </script>
 
 <template>
-  <div id="app" class="min-h-screen bg-white">
+  <div id="app" class="min-h-screen bg-transparent">
     <!-- Header/Navigation -->
-    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md border-b border-gray-200 z-50 transition-all duration-300">
+    <header class="fixed top-0 left-0 right-0 bg-transparent backdrop-blur-md border-b border-white/20 z-50 transition-all duration-300 spotlight-effect">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
           <div class="flex-shrink-0">
-            <div class="text-2xl font-bold text-green-500">JRG</div>
+            <div class="text-2xl font-bold text-white">JRG</div>
           </div>
           
           <!-- Desktop Navigation -->
@@ -66,7 +81,7 @@ const getText = (key: string) => t(key, currentLanguage.value)
               v-for="item in ['about', 'portfolio', 'skills', 'contact']" 
               :key="item"
               @click="scrollToSection(item)"
-              :class="{ 'text-green-500': currentSection === item, 'text-gray-600': currentSection !== item }"
+              :class="{ 'text-white': currentSection === item, 'text-gray-300': currentSection !== item }"
               class="nav-item"
             >
               {{ getText(`nav.${item}`) }}
@@ -80,21 +95,21 @@ const getText = (key: string) => t(key, currentLanguage.value)
           
           <!-- Mobile menu button -->
           <button @click="toggleMenu" class="md:hidden flex flex-col space-y-1 p-2">
-            <span class="w-6 h-0.5 bg-gray-600 transition-all duration-300" :class="{ 'rotate-45 translate-y-1.5': isMenuOpen }"></span>
-            <span class="w-6 h-0.5 bg-gray-600 transition-all duration-300" :class="{ 'opacity-0': isMenuOpen }"></span>
-            <span class="w-6 h-0.5 bg-gray-600 transition-all duration-300" :class="{ '-rotate-45 -translate-y-1.5': isMenuOpen }"></span>
+            <span class="w-6 h-0.5 bg-white transition-all duration-300" :class="{ 'rotate-45 translate-y-1.5': isMenuOpen }"></span>
+            <span class="w-6 h-0.5 bg-white transition-all duration-300" :class="{ 'opacity-0': isMenuOpen }"></span>
+            <span class="w-6 h-0.5 bg-white transition-all duration-300" :class="{ '-rotate-45 -translate-y-1.5': isMenuOpen }"></span>
           </button>
         </div>
         
         <!-- Mobile Navigation -->
-        <div v-show="isMenuOpen" class="md:hidden border-t border-gray-200 py-4">
+        <div v-show="isMenuOpen" class="md:hidden border-t border-white/20 py-4">
           <div class="flex flex-col space-y-4">
             <button 
               v-for="item in ['about', 'portfolio', 'skills', 'contact']" 
               :key="item"
               @click="scrollToSection(item)"
-              :class="{ 'text-green-500': currentSection === item, 'text-gray-600': currentSection !== item }"
-              class="text-left px-4 py-2 text-lg font-medium hover:text-green-500 transition-colors duration-300"
+              :class="{ 'text-white': currentSection === item, 'text-gray-300': currentSection !== item }"
+              class="text-left px-4 py-2 text-lg font-medium hover:text-white transition-colors duration-300"
             >
               {{ getText(`nav.${item}`) }}
             </button>
@@ -109,16 +124,16 @@ const getText = (key: string) => t(key, currentLanguage.value)
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="min-h-screen flex items-center pt-16 bg-gradient-to-br from-indigo-50 via-purple-50 to-white relative overflow-hidden">
+    <section id="hero" class="min-h-screen flex items-center pt-16 bg-transparent relative overflow-hidden spotlight-effect">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <div class="animate-on-scroll">
-            <h1 class="text-5xl md:text-7xl font-bold text-gray-900 leading-tight mb-6">
+            <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
               <span class="title-line block">{{ getText('hero.title') }}</span>
               <span class="title-line block">{{ getText('hero.subtitle') }}</span>
               <span class="title-line block text-gradient">{{ getText('hero.subtitle') }}</span>
             </h1>
-            <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
               {{ getText('hero.description') }}
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
@@ -141,7 +156,7 @@ const getText = (key: string) => t(key, currentLanguage.value)
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-24 bg-white">
+    <section id="about" class="py-24 bg-transparent spotlight-effect">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="section-title">{{ getText('about.title') }}</h2>
         <div class="grid lg:grid-cols-3 gap-12">
@@ -175,7 +190,7 @@ const getText = (key: string) => t(key, currentLanguage.value)
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="py-24 bg-gradient-to-br from-gray-50 to-indigo-50">
+    <section id="portfolio" class="py-24 bg-transparent spotlight-effect">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="section-title">{{ getText('portfolio.title') }}</h2>
         <p class="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
@@ -262,7 +277,7 @@ const getText = (key: string) => t(key, currentLanguage.value)
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-24 bg-white">
+    <section id="skills" class="py-24 bg-transparent spotlight-effect">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="section-title">{{ getText('skills.title') }}</h2>
         <div class="grid md:grid-cols-3 gap-8">
@@ -309,7 +324,7 @@ const getText = (key: string) => t(key, currentLanguage.value)
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-gradient-to-br from-purple-50 to-white">
+    <section id="contact" class="py-24 bg-transparent spotlight-effect">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="section-title">{{ getText('contact.title') }}</h2>
         <div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -342,7 +357,7 @@ const getText = (key: string) => t(key, currentLanguage.value)
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-transparent text-white py-12 spotlight-effect">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <p class="text-gray-400">&copy; 2024 Juan R Guerrero. {{ getText('footer.copyright') }}</p>
       </div>

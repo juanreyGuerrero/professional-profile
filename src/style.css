@@ -12,6 +12,31 @@
   
   body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #031026;
+    color: white;
+  }
+  
+  /* Efecto de foco con cursor */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle 400px at var(--mouse-x, 50%) var(--mouse-y, 50%), 
+                rgba(255, 255, 255, 0.1) 0%, 
+                rgba(255, 255, 255, 0.05) 30%, 
+                transparent 70%);
+    pointer-events: none;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+  
+  /* Contenido principal por encima del efecto de foco */
+  main, section, header, footer {
+    position: relative;
+    z-index: 2;
   }
   
   /* Scrollbar personalizada */
@@ -54,7 +79,7 @@
   }
   
   .card {
-    @apply bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100;
+    @apply bg-white/10 backdrop-blur-md rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-white/20;
   }
   
   .nav-item {
@@ -79,7 +104,7 @@
   }
   
   .stat-card {
-    @apply bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2;
+    @apply bg-white/10 backdrop-blur-md p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-white/20;
   }
   
   .stat-number {
@@ -95,7 +120,7 @@
   }
   
   .contact-item {
-    @apply flex items-center gap-4 text-lg text-gray-600;
+    @apply flex items-center gap-4 text-lg text-white;
   }
   
   .contact-icon {
@@ -158,6 +183,14 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Script para el efecto de foco */
+@layer utilities {
+  .spotlight-effect {
+    position: relative;
+    z-index: 2;
   }
 }
 
