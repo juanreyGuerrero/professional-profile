@@ -161,10 +161,10 @@ const getText = (key: string) => t(key, currentLanguage.value)
         <h2 class="section-title">{{ getText('about.title') }}</h2>
         <div class="grid lg:grid-cols-3 gap-12">
           <div class="lg:col-span-2 animate-on-scroll">
-            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+            <p class="text-lg text-white mb-6 leading-relaxed">
               {{ getText('about.description1') }}
             </p>
-            <p class="text-lg text-gray-600 leading-relaxed">
+            <p class="text-lg text-white leading-relaxed">
               {{ getText('about.description2') }}
             </p>
           </div>
@@ -193,7 +193,7 @@ const getText = (key: string) => t(key, currentLanguage.value)
     <section id="portfolio" class="py-24 bg-transparent spotlight-effect">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="section-title">{{ getText('portfolio.title') }}</h2>
-        <p class="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
+        <p class="text-xl text-white text-center mb-16 max-w-3xl mx-auto">
           {{ getText('portfolio.description') }}
         </p>
         
@@ -205,9 +205,9 @@ const getText = (key: string) => t(key, currentLanguage.value)
                 <MusicFlowImage />
               </div>
               <div class="p-6">
-                <h3 class="text-xl font-bold text-gray-900 mb-2">{{ getText('portfolio.project1.title') }}</h3>
-                <p class="text-sm text-green-600 font-medium mb-3">{{ getText('portfolio.project1.tech') }}</p>
-                <p class="text-gray-600 mb-4">{{ getText('portfolio.project1.description') }}</p>
+                <h3 class="text-xl font-bold text-white mb-2">{{ getText('portfolio.project1.title') }}</h3>
+                <p class="text-sm text-green-400 font-medium mb-3">{{ getText('portfolio.project1.tech') }}</p>
+                <p class="text-white mb-4">{{ getText('portfolio.project1.description') }}</p>
                 <div class="flex gap-3">
                   <a 
                     href="https://1drv.ms/p/c/0bff7bc00afc723f/EaoKbQKsRZ5AuSf1nlxfhgoBkU9SZ_T6UKoZUl9QTPQfjg?e=4C3u62&nav=eyJzSWQiOjM0MiwiY0lkIjoyNDk4MDMxNDY0fQ" 
@@ -237,9 +237,9 @@ const getText = (key: string) => t(key, currentLanguage.value)
                 <CGTImage />
               </div>
               <div class="p-6">
-                <h3 class="text-xl font-bold text-gray-900 mb-2">{{ getText('portfolio.project2.title') }}</h3>
-                <p class="text-sm text-green-600 font-medium mb-3">{{ getText('portfolio.project2.tech') }}</p>
-                <p class="text-gray-600 mb-4">{{ getText('portfolio.project2.description') }}</p>
+                <h3 class="text-xl font-bold text-white mb-2">{{ getText('portfolio.project2.title') }}</h3>
+                <p class="text-sm text-green-400 font-medium mb-3">{{ getText('portfolio.project2.tech') }}</p>
+                <p class="text-white mb-4">{{ getText('portfolio.project2.description') }}</p>
                 <div class="flex gap-3">
                   <a 
                     href="https://www.cgt.do/" 
@@ -262,9 +262,9 @@ const getText = (key: string) => t(key, currentLanguage.value)
                 <DeeXyImage />
               </div>
               <div class="p-6">
-                <h3 class="text-xl font-bold text-gray-900 mb-2">{{ getText('portfolio.project3.title') }}</h3>
-                <p class="text-sm text-green-600 font-medium mb-3">{{ getText('portfolio.project3.tech') }}</p>
-                <p class="text-gray-600 mb-4">{{ getText('portfolio.project3.description') }}</p>
+                <h3 class="text-xl font-bold text-white mb-2">{{ getText('portfolio.project3.title') }}</h3>
+                <p class="text-sm text-green-400 font-medium mb-3">{{ getText('portfolio.project3.tech') }}</p>
+                <p class="text-white mb-4">{{ getText('portfolio.project3.description') }}</p>
                 <div class="flex gap-3">
                   <button class="btn-primary text-sm py-2 px-4">{{ getText('portfolio.viewProject') }}</button>
                   <button class="btn-secondary text-sm py-2 px-4">{{ getText('portfolio.viewCode') }}</button>
@@ -283,7 +283,7 @@ const getText = (key: string) => t(key, currentLanguage.value)
         <div class="grid md:grid-cols-3 gap-8">
           <div class="animate-on-scroll">
             <div class="card p-8">
-              <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">{{ getText('skills.frontend') }}</h3>
+              <h3 class="text-2xl font-bold text-white mb-6 text-center">{{ getText('skills.frontend') }}</h3>
               <div class="flex flex-wrap gap-3 justify-center">
                 <span class="skill-tag">Vue.js</span>
                 <span class="skill-tag">React</span>
@@ -296,7 +296,7 @@ const getText = (key: string) => t(key, currentLanguage.value)
           
           <div class="animate-on-scroll">
             <div class="card p-8">
-              <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">{{ getText('skills.backend') }}</h3>
+              <h3 class="text-2xl font-bold text-white mb-6 text-center">{{ getText('skills.backend') }}</h3>
               <div class="flex flex-wrap gap-3 justify-center">
                 <span class="skill-tag">Node.js</span>
                 <span class="skill-tag">Python</span>
@@ -309,7 +309,7 @@ const getText = (key: string) => t(key, currentLanguage.value)
           
           <div class="animate-on-scroll">
             <div class="card p-8">
-              <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">{{ getText('skills.tools') }}</h3>
+              <h3 class="text-2xl font-bold text-white mb-6 text-center">{{ getText('skills.tools') }}</h3>
               <div class="flex flex-wrap gap-3 justify-center">
                 <span class="skill-tag">Git</span>
                 <span class="skill-tag">Docker</span>
