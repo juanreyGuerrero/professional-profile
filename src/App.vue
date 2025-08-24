@@ -109,7 +109,7 @@ const getText = (key: string) => t(key, currentLanguage.value)
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="min-h-screen flex items-center pt-16 bg-gradient-to-br from-gray-50 to-green-50 relative overflow-hidden">
+    <section id="hero" class="min-h-screen flex items-center pt-16 bg-gradient-to-br from-indigo-50 via-purple-50 to-white relative overflow-hidden">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <div class="animate-on-scroll">
@@ -175,7 +175,7 @@ const getText = (key: string) => t(key, currentLanguage.value)
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="py-24 bg-gray-50">
+    <section id="portfolio" class="py-24 bg-gradient-to-br from-gray-50 to-indigo-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="section-title">{{ getText('portfolio.title') }}</h2>
         <p class="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
@@ -309,7 +309,7 @@ const getText = (key: string) => t(key, currentLanguage.value)
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-gray-50">
+    <section id="contact" class="py-24 bg-gradient-to-br from-purple-50 to-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="section-title">{{ getText('contact.title') }}</h2>
         <div class="grid lg:grid-cols-2 gap-12 items-center">

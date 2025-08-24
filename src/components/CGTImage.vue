@@ -208,11 +208,12 @@
 .project-title {
   font-family: 'Inter', sans-serif;
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 800;
   color: white;
   margin: 0;
   line-height: 1;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 0 20px rgba(16, 185, 129, 0.3);
+  letter-spacing: -0.02em;
 }
 
 .company-services {

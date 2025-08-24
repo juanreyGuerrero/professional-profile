@@ -59,7 +59,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 25%, #6D28D9 50%, #5B21B6 75%, #4C1D95 100%);
+  background: linear-gradient(135deg, #A855F7 0%, #9333EA 25%, #7C3AED 50%, #6D28D9 75%, #5B21B6 100%);
   z-index: 1;
 }
 
@@ -163,10 +163,12 @@
 .project-title {
   font-family: 'Inter', sans-serif;
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 800;
   color: white;
   margin: 0;
   line-height: 1;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 0 20px rgba(168, 85, 247, 0.3);
+  letter-spacing: -0.02em;
 }
 
 .creator-name {

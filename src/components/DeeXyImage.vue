@@ -80,7 +80,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 25%, #60A5FA 50%, #93C5FD 75%, #DBEAFE 100%);
+  background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 25%, #A855F7 50%, #C084FC 75%, #E0E7FF 100%);
   z-index: 1;
 }
 
@@ -96,10 +96,10 @@
 /* Neural network nodes */
 .neural-node {
   position: absolute;
-  background: rgba(139, 92, 246, 0.8);
-  border: 2px solid rgba(139, 92, 246, 0.6);
+  background: rgba(168, 85, 247, 0.9);
+  border: 2px solid rgba(168, 85, 247, 0.7);
   border-radius: 50%;
-  box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.5), inset 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 .node-1 {
@@ -145,9 +145,10 @@
 /* Connection lines */
 .connection-line {
   position: absolute;
-  background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.6), transparent);
-  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(168, 85, 247, 0.8), transparent);
+  height: 2px;
   animation: flow 3s infinite;
+  border-radius: 1px;
 }
 
 .line-1 {
@@ -174,9 +175,10 @@
 /* AI particles */
 .ai-particle {
   position: absolute;
-  background: rgba(59, 130, 246, 0.7);
+  background: rgba(99, 102, 241, 0.8);
   border-radius: 50%;
   animation: float 4s infinite ease-in-out;
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.6);
 }
 
 .particle-1 {
@@ -238,31 +240,34 @@
 .project-title {
   font-family: 'Inter', sans-serif;
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 800;
   color: white;
   margin: 0;
   line-height: 1;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 0 20px rgba(168, 85, 247, 0.3);
+  letter-spacing: -0.02em;
 }
 
 .ai-type {
   font-family: 'Inter', sans-serif;
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #FCD34D;
   margin: 0;
   line-height: 1;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .ai-capabilities {
   font-family: 'Inter', sans-serif;
   font-size: 0.7rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #A7F3D0;
   margin: 0;
   line-height: 1;
-  opacity: 0.9;
+  opacity: 0.95;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Animations */
