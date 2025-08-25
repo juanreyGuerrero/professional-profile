@@ -76,9 +76,9 @@
   
   .section-title {
     @apply text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 via-indigo-800 to-purple-800 bg-clip-text text-transparent text-center mb-16;
-  }
-  
-  .card {
+}
+
+.card {
     @apply bg-white/10 backdrop-blur-md rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-white/20;
   }
   
@@ -119,6 +119,26 @@
     @apply absolute rounded-full bg-gradient-to-br from-indigo-400 to-purple-600 opacity-80 animate-bounce;
   }
   
+  .contact-card {
+    @apply flex items-start gap-6 p-6 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 hover:bg-white/10 transition-all duration-300 group-hover:border-white/20;
+  }
+  
+  .contact-icon-wrapper {
+    @apply flex-shrink-0 w-12 h-12 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center text-white shadow-lg;
+  }
+  
+  .contact-content {
+    @apply flex-1 min-w-0;
+  }
+  
+  .contact-label {
+    @apply text-sm font-semibold text-gray-300 uppercase tracking-wider mb-2;
+  }
+  
+  .contact-value {
+    @apply text-lg text-white font-medium break-words;
+  }
+  
   .contact-item {
     @apply flex items-center gap-4 text-lg text-white;
   }
@@ -128,7 +148,11 @@
   }
   
   .social-link {
-    @apply inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold text-center transition-all duration-300 hover:from-indigo-700 hover:to-purple-700 hover:scale-105 hover:shadow-xl shadow-lg;
+    @apply flex items-center gap-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:from-indigo-700 hover:to-purple-700 hover:scale-105 hover:shadow-xl shadow-lg group-hover:shadow-2xl;
+  }
+  
+  .social-icon {
+    @apply flex-shrink-0 w-6 h-6 text-white;
   }
 }
 
